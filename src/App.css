@@ -1,38 +1,71 @@
 .App {
-  text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+	max-width: calc(100vw - 100px);
+	margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.List__Container {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.List {
+	min-width: 300px;
+	margin-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.List ul {
+	margin-block-start: 0px;
+	padding-inline-start: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.List li {
+	position: relative;
+	display: flex;
+	width: 175px;
+	margin: 15px 0;
+	font-size: 20px;
+	list-style-type: none;
+	justify-content: space-between;
+}
+
+.List li p {
+	display: inline-block;
+	margin: 0px 5px 0px 0px;
+	cursor: pointer;
+}
+
+.List li p:before {
+	content: "";
+	display: block;
+	background-size: 20px 20px;
+	position: absolute;
+	left: -30px;
+	top: 1px;
+	width: 20px;
+	height: 20px;
+	background-color: aquamarine;
+}
+
+.List .checked p {
+	text-decoration: line-through;
+}
+
+.List .checked p:before {
+	background-image: url("./assets/checkmark.svg");
+}
+
+.List li .delete-btn {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	background-image: url("./assets/delete.svg");
+	background-size: contain;
+	border: 0;
+	cursor: pointer;
 }
