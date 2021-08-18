@@ -147,6 +147,10 @@ You should now be able to write text into the text box under each category. Howe
 
 - [ ] Return to `GroceryItem.js`. You have one last event handler function to update - `handleDelBtnClick()` which is already connected to the delete button. Once again, you are going to loop over the objects in the array, however this time you can use the `.filter()` method to return an array with only the objects that were not clicked.
 
+## Part 6 - Conditionally displaying content in lists
+
+- [ ] Finally, let's add a condition that displays 'No items yet!' when there are no items in a category. In `CategoryList.js` use a ternary operation to display 'No items yet!' inside a a `<p>` element if the array of grocery item objects the component receives is empty.
+
 ## Bonus Missions
 
 TBD
