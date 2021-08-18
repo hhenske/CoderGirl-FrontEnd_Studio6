@@ -32,7 +32,7 @@ This file holds the const variable `STARTER_LIST`. It's an array of objects, whe
 - `checked`: boolean, determines if the item is checked or not
 - `category`: string, the name of the category the item belongs to
 
-Then open the other file in the data directory: `categoriesList.js`. This file holds the const variable `CATEGORIES`. It's an array of string, each element holding the name of a category that corresponds with the category property in `STARTER_LIST`.
+Then open the other file in the data directory: `categoriesList.js`. This file holds the const variable `CATEGORIES`. It's an array of strings, each element holding the name of a category that corresponds with the category property in `STARTER_LIST`.
 
 You will eventually loop over both of these arrays to use the data to create your grocery list.
 
@@ -83,7 +83,7 @@ filteredGroceryList={STARTER_LIST.filter(item =>
 
 ### B. Mapping over `filteredGroceryList`
 
-- [ ] Inside `<CategoryList>`, add `filteredGroceryList` to the destructured props object. If you have React Developer Tools installed, this is a great time to open your dev tools inside the browser and see if `filteredGroceryList` is getting the data you expected. (Note: Install React Dev Tools by searching for it in google in your preferred browser and select your browser's webstore in the results. You should see the React logo and many installs and reviews. Add the extension to your browser. You then will be able to access information on each componenet's state, props and more through the browser's developer tools.)
+- [ ] Inside `<CategoryList>`, add `filteredGroceryList` to the destructured props object. If you have React Developer Tools installed, this is a great time to open your dev tools inside the browser and see if `filteredGroceryList` is getting the data you expected. (Note: Install React Dev Tools by searching for it in google in your preferred browser and select your browser's webstore in the results. You should see the React logo and many installs and reviews. Add the extension to your browser. You then will be able to access information on each component's state, props and more through the browser's developer tools.)
 - [ ] Then you will once again map over `filteredGroceryList` to return a JSX expression to display the grocery item. Before rendering the `<GroceryItem>` component, let's make sure it works by displaying the name of the item as an `<li>` element
 
 Once complete, the app should now look like this:
@@ -96,7 +96,7 @@ Once complete, the app should now look like this:
 - [ ] Just as you did for rendering `<CategoryList>`, you will import `GroceryItem` inside of `CategoryList.js`. Then replace the `<li>` element with a `<GroceryItem>` component, passing the grocery item object as the `item` prop.
 - [ ] Don't forget to add the `key` prop with a unique value.
 
-Once this is complete, you should see an empty checkboxe and a delete button appear with each item. However, nothing will happen when you click either. We need to set up the event handlers and state to interact with the grocery list.
+Once this is complete, you should see an empty checkbox and a delete button appear with each item. However, nothing will happen when you click either. We need to set up the event handlers and state to interact with the grocery list.
 
 ![Displaying detailed list](./images-for-readme/displaying-full-list.png)
 
@@ -116,7 +116,7 @@ Tips:
 
 - This update relies on using the previous state
 - Use the `.map()` again to map over the array of grocery item objects. `.map()` will return a new array, so you can add logic to look for the object that is changing, returning all the other objects as is.
-- When updating the 1 object that is getting updated, use destructuring to keep all the original properities as-is, and only update the `checked` value.
+- When updating the 1 object that is getting updated, use destructuring to keep all the original properties as-is, and only update the `checked` value.
 
 When implemented correctly, items that are checked off look like this:
 
@@ -149,7 +149,7 @@ You should now be able to write text into the text box under each category. Howe
 
 ## Part 6 - Conditionally displaying content in lists
 
-- [ ] Finally, let's add a condition that displays 'No items yet!' when there are no items in a category. In `CategoryList.js` use a ternary operation to display 'No items yet!' inside a a `<p>` element if the array of grocery item objects the component receives is empty.
+- [ ] Finally, let's add a condition that displays 'No items yet!' when there are no items in a category. In `CategoryList.js` use a ternary operation to display 'No items yet!' inside a `<p>` element if the array of grocery item objects the component receives is empty.
 
 ## Bonus Missions
 
