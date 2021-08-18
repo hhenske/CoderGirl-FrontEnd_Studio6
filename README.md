@@ -153,4 +153,13 @@ You should now be able to write text into the text box under each category. Howe
 
 ## Bonus Missions
 
-TBD
+### A. Custom colored checkboxes
+You can manipulate the color of the checkbox background by adding the following at the bottom of `App.css`:
+```css
+.List .<unique class name> li p:before {
+  background-color: <hex code or color name>;
+}
+```
+Then add the unique class name to the `<ul>` element in `CategoryList.js`.
+Can you make every categories' checkboxes a different color? 
+[Checkout this site](https://htmlcolorcodes.com/) to get unique hex color codes.
