@@ -6,15 +6,24 @@ const CategoryList = props => {
   const [inputVal, setInputVal] = useState("");
 
   const handleInputKeyPress = e => {
+    let duplicateFlag = false;
     if (e.key === "Enter" && inputVal) {
-      setGroceryList(prevList => [
-        ...prevList,
-        {
-          name: inputVal,
-          checked: false,
-          category: categoryName,
-        },
-      ]);
+      filteredGroceryList.forEach(item => {
+        if (item.name === inputVal) {
+          console.log("Duplicate item");
+          duplicateFlag = true;
+        }
+      });
+      if (!duplicateFlag) {
+        setGroceryList(prevList => [
+          ...prevList,
+          {
+            name: inputVal,
+            checked: false,
+            category: categoryName,
+          },
+        ]);
+      }
       setInputVal("");
     }
   };
