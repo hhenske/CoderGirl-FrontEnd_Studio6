@@ -19,20 +19,24 @@ export const DUMMY_LIST = [
 		checked: false,
 		category: "Produce",
 	},
+	{
+		name: "Sandwich bread",
+		checked: false,
+		category: "Bakery",
+	},
+	{
+		name: "Apples",
+		checked: false,
+		category: "Produce",
+	},
+	{
+		name: "Carrots",
+		checked: false,
+		category: "Produce",
+	},
+	{
+		name: "Toothpaste",
+		checked: false,
+		category: "Non-Foods",
+	},
 ];
-
-/*
-	'Apples',
-	'Carrots',
-	'Spinach',
-	'Tomato sauce',
-	'Ground beef',
-	'Bacon',
-	'Tea',
-	'Pancake mix',
-	'Almond milk',
-	'Greek yogurt',
-	'Multi-purpose cleaner',
-	'Toothpaste',
-
-*/
