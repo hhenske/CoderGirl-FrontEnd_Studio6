@@ -1,81 +1,81 @@
 body {
-	margin: 0;
-	background-color: #f0f0f0;
-	color: #292f36;
-	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #292f36;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
 		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
 		sans-serif; */
-	font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .App {
-	max-width: calc(100vw - 200px);
-	margin: 40px auto 0;
+  max-width: calc(100vw - 200px);
+  margin: 40px auto 0;
 }
 
 .List__Container {
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-	justify-content: flex-start;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .List {
-	min-width: 300px;
-	margin-bottom: 40px;
+  min-width: 300px;
+  margin-bottom: 40px;
 }
 
 .List ul {
-	margin-block-start: 0px;
-	padding-inline-start: 30px;
+  margin-block-start: 0px;
+  padding-inline-start: 30px;
 }
 
 .List li {
-	position: relative;
-	display: flex;
-	width: 175px;
-	margin: 15px 0;
-	font-size: 20px;
-	list-style-type: none;
-	justify-content: space-between;
+  position: relative;
+  display: flex;
+  width: 175px;
+  margin: 15px 0;
+  font-size: 20px;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
 .List li p {
-	display: inline-block;
-	margin: 0px 5px 0px 0px;
-	cursor: pointer;
+  display: inline-block;
+  margin: 0px 5px 0px 0px;
+  cursor: pointer;
 }
 
 .List li p:before {
-	content: "";
-	display: block;
-	background-size: 20px 20px;
-	position: absolute;
-	left: -30px;
-	top: 2px;
-	width: 20px;
-	height: 20px;
-	/*background-color: #7d70ba;*/
-	background-color: #db5461;
+  content: "";
+  display: block;
+  background-size: 20px 20px;
+  position: absolute;
+  left: -30px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  /*background-color: #7d70ba;*/
+  background-color: #db5461;
 }
 
 .List .checked p {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .List .checked p:before {
-	background-image: url("./assets/checkmark.svg");
+  background-image: url("./assets/checkmark.svg");
 }
 
 .List li .delete-btn {
-	appearance: none;
-	width: 20px;
-	height: 20px;
-	background-color: transparent;
-	background-image: url("./assets/delete.svg");
-	background-size: contain;
-	border: 0;
-	cursor: pointer;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("./assets/delete.svg");
+  background-size: contain;
+  border: 0;
+  cursor: pointer;
 }
