@@ -153,7 +153,10 @@ You should now be able to write text into the text box under each category. Howe
 
 ## Bonus Missions
 
-### A. Custom colored checkboxes
+### A. Prevent duplicates from being added
+Add logic to prevent a user from adding a duplicate item.
+
+### B. Custom colored checkboxes
 You can manipulate the color of the checkbox background by adding the following at the bottom of `App.css`:
 ```css
 .List .<unique class name> li p:before {
