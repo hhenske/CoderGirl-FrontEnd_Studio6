@@ -1,4 +1,4 @@
-export const DUMMY_LIST = [
+export const STARTER_LIST = [
 	{
 		name: "Grapes",
 		checked: false,
