@@ -14,7 +14,7 @@ const App = () => {
         {CATEGORIES.map(category => (
           <CategoryList
             key={category}
-            category={category}
+            categoryName={category}
             filteredGroceryList={groceryList.filter(
               item => item.category === category
             )}

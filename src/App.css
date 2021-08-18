@@ -57,7 +57,6 @@ body {
   top: 2px;
   width: 20px;
   height: 20px;
-  /*background-color: #7d70ba;*/
   background-color: #db5461;
 }
 
@@ -78,4 +77,32 @@ body {
   background-size: contain;
   border: 0;
   cursor: pointer;
+}
+
+.List .Produce li p:before {
+  background-color: #79db6e;
+}
+
+.List .Meat li p:before {
+  background-color: #f25e4d;
+}
+
+.List .Bakery li p:before {
+  background-color: #fbaf33;
+}
+
+.List .Canned li p:before {
+  background-color: #c465f1;
+}
+
+.List .Dairy li p:before {
+  background-color: #29ddf5;
+}
+
+.List .Frozen li p:before {
+  background-color: #658df1;
+}
+
+.List .Non-Foods li p:before {
+  background-color: #e8de08;
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import GroceryItem from "./GroceryItem";
 
 const CategoryList = props => {
-  const { category, filteredGroceryList, setGroceryList } = props;
+  const { categoryName, filteredGroceryList, setGroceryList } = props;
   const [inputVal, setInputVal] = useState("");
 
   const handleInputKeyPress = e => {
@@ -12,7 +12,7 @@ const CategoryList = props => {
         {
           name: inputVal,
           checked: false,
-          category: category,
+          category: categoryName,
         },
       ]);
       setInputVal("");
@@ -21,11 +21,11 @@ const CategoryList = props => {
 
   return (
     <div className="List">
-      <h2>{category}</h2>
+      <h2>{categoryName}</h2>
       {filteredGroceryList.length === 0 ? (
         <p>No items yet!</p>
       ) : (
-        <ul>
+        <ul className={categoryName}>
           {filteredGroceryList.map(item => (
             <GroceryItem
               key={item.name}
