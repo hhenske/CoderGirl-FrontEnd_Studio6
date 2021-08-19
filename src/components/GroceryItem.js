@@ -1,14 +1,23 @@
 import React from "react";
 
 const GroceryItem = props => {
-  const { item } = props;
+  const { item, setGroceryList } = props;
 
   const handleItemClick = () => {
-    // TODO: Update groceryList state to check/uncheck item
+    setGroceryList(prevList =>
+      prevList.map(prevItem=> {
+        if (prevItem.name=== item.name) {
+          return { ...prevItem, checked: !item.checked };
+        }
+        return prevItem;
+      })
+    );
   };
 
   const handleDelBtnClick = () => {
-    // TODO: Update groceryList state to delete item
+    setGroceryList(prevList =>
+      prevList.filter(prevItem => prevItem.name !== item.name)
+      );
   };
 
   return (
