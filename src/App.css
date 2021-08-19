@@ -79,3 +79,6 @@ body {
   border: 0;
   cursor: pointer;
 }
+.List .specialPurchase li p:before  {
+  background-color: blue;
+}

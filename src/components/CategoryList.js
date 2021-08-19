@@ -8,7 +8,15 @@ const CategoryList = props => {
   
 
   const handleInputKeyPress = e => {
+    let duplicate = false;
     if (e.key === "Enter" && inputVal) {
+      filteredGroceryList.forEach(item => {
+        if (item.name === inputVal) {
+          console.log("Item already listed!");
+          duplicate = true;
+      }
+    });
+    if (!duplicate) {
       setGroceryList(prevList => 
          [ ...prevList,
           {
@@ -17,10 +25,8 @@ const CategoryList = props => {
             category: category,
           },
         ]);
-       setInputVal('');
-
-    
-  
+      }
+       setInputVal('')
     }
   };
 
